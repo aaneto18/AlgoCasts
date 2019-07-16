@@ -12,6 +12,23 @@
 //   4
 //   buzz
 
-function fizzBuzz(n) {}
+function fizzBuzz(n) {
+  for (var i = 1; i <= n; i++) {
+    let result = "";
+    if (i % 3 === 0) {
+      result += "fizz";
+    }
+    if (i % 5 === 0) {
+      result += "buzz";
+    }
+    if (result === "") {
+      result = i;
+    }
+
+    //multiple of 3 and 5 is multiple of 15
+
+    console.log(result);
+  }
+}
 
 module.exports = fizzBuzz;
